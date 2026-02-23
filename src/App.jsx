@@ -1,7 +1,6 @@
 import "./App.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ItemCount from "./componentes/ItemCount/ItemCount";
 import NavBar from "./componentes/NavBar/NavBar";
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
@@ -9,6 +8,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CarritoProvider } from "./context/CarritoContext";
 import Cart from "./componentes/Cart/Cart";
 import Checkout from "./componentes/Checkout/Checkout";
+import { ToastContainer } from "react-toastify";
+
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/checkout" element={<Checkout/>}/>
           </Routes>
         </CarritoProvider>
+        <ToastContainer/>
       </BrowserRouter>
     </>
   );

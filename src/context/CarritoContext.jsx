@@ -17,8 +17,6 @@ export const CarritoProvider = ({children}) =>{
     const [total, setTotal] = useState(0)
     const [cantidadTotal, setCantidadTotal] = useState(0)
 
-    //Verificamos por consola:
-    console.log(carrito)
     
     //4)Agregamos alguna funciones auxiliares para la lógica del carrito
 
